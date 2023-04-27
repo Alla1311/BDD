@@ -31,4 +31,5 @@ public class VerificationPage {
         $("[data-test-id=error-notification]>.notification__content").shouldHave(text("Ошибка! Неверно указан код! Попробуйте ещё раз."));
 
     }
+
 }

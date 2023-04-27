@@ -28,6 +28,7 @@ public class DashboardPage {
     }
 
     public TransferPage selectCardToTransfer(DataHelper.InfoCard infoCard) {
+
         cards.findBy(attribute("data-test-id", infoCard.getCardId())).$("button").click();
         return new TransferPage();
     }

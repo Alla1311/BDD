@@ -20,6 +20,7 @@ public class TransferPage {
 
     public void transaction(String value, String source) {
         totField.sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE, value.replace(" ", ""));
+
         sourceCardField.sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE, source.replace(" ", ""));
         addFundsButton.click();
     }
